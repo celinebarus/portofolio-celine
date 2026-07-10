@@ -1,0 +1,22 @@
+body{
+    min-height: 2000px;
+}
+
+.profile{
+    width: 200px;
+    height:200px;
+    object-fit:cover;
+    border: 4px;
+}
+
+.jumbotron{
+    padding-top: 2rem;
+    background-color: rgb(191, 234, 248);
+    color: rgb(86, 102, 114);
+}
+
+#projects{
+    background-color: rgb(191, 234, 248);
+    
+
+}
