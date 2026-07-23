@@ -1,111 +1,296 @@
 <!doctype html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Project | Celine Ernesta Marsella Br Barus</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <title>Portofolio | Celine Ernesta Marsella</title>
+
+    <!-- Bootstrap CSS Murni -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <!-- CSS Kustom Terpisah -->
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+
+  <body data-bs-spy="scroll" data-bs-target="#navbarNav" tabindex="0">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm" style="background-color: #61bfcf">
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm sticky-top bg-primary-custom">
       <div class="container">
-        <a class="navbar-brand" href="#">Celine Ernesta Marsella Br Barus</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand fw-bold fs-4" href="#">Portofolio Celine</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
+          <ul class="navbar-nav ms-auto fw-semibold">
+            <li class="nav-item mx-2"><a class="nav-link active" href="#beranda">Beranda</a></li>
+            <li class="nav-item mx-2"><a class="nav-link" href="#tentang">Tentang</a></li>
+            <li class="nav-item mx-2"><a class="nav-link" href="#keahlian">Keahlian</a></li>
+            <li class="nav-item mx-2"><a class="nav-link" href="#proyek">Proyek</a></li>
+            <li class="nav-item mx-2"><a class="nav-link" href="#kontak">Kontak</a></li>
           </ul>
         </div>
       </div>
     </nav>
     <!-- akhir Navbar -->
 
-    <!-- Jumbotron -->
+    <!-- Jumbotron / Beranda -->
+    <section id="beranda" class="text-center pt-5 mt-3">
+      <div class="container mt-2">
+        <img src="img/celineee.jpeg" alt="Celine Ernesta Marsella" class="rounded-circle shadow mb-4 border border-4 border-white profile-img" />
+        <h1 class="display-4 fw-bold text-dark">Hai, Saya <span class="text-primary-custom">Celine Ernesta</span></h1>
+        <p class="lead text-secondary mt-3 mx-auto hero-text">Lulusan Teknologi Rekayasa Perangkat Lunak | Focused on Web Development</p>
 
-    <section class="jumbotron text-center mt-2">
-      <img src="img/Celine.jpeg" alt="" srcset="" width="200" class="rounded-circle img-thumbnail" />
-      <h1 class="display-4 fs-2 mt-2">Celine Ernesta Marsella Br Barus</h1>
-      <p class="lead">Student on the Software Engenering</p>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <!-- Tombol Aksi -->
+        <div class="mt-4">
+          <a href="#kontak" class="btn btn-primary-custom px-4 py-2 rounded-pill fw-semibold me-2 shadow-sm">Lihat Portofolio</a>
+          <a href="#" class="btn btn-outline-custom px-4 py-2 rounded-pill fw-semibold shadow-sm"> <i class="bi bi-download me-1"></i> Unduh Portofolio</a>
+        </div>
+      </div>
+
+      <!-- Gelombang SVG Pembatas -->
+      <svg class="mt-2 mb-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
-          fill="#f3f4f5"
+          fill="#FFFFFF"
           fill-opacity="1"
-          d="M0,0L24,32C48,64,96,128,144,138.7C192,149,240,107,288,74.7C336,43,384,21,432,48C480,75,528,149,576,165.3C624,181,672,139,720,106.7C768,75,816,53,864,74.7C912,96,960,160,1008,186.7C1056,213,1104,203,1152,192C1200,181,1248,171,1296,176C1344,181,1392,203,1416,213.3L1440,224L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"
+          d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,170.7C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
         ></path>
       </svg>
     </section>
-
     <!-- akhir Jumbotron -->
 
-    <!-- About -->
-    <section id="About">
-      <div class="container">
-        <div class="row text-center mb-3">
+    <!-- Tentang Saya -->
+    <section class="tentang">
+      <div class="container P-5">
+        <div class="row text-center mb-4">
           <div class="col">
-            <h2>About Me</h2>
+            <h2 class="fw-bold">Tentang <span class="text-primary-custom">Saya</span></h2>
+            <div class="mx-auto rounded section-divider"></div>
           </div>
         </div>
-        <div class="row justify-content-center fs-5 text-center">
-          <div class="col-8">
-            <p>
-              Saya merupakan mahasiswa Software Engineering yang memiliki ketertarikan dalam bidang pengembangan website dan teknologi informasi. Selama masa perkuliahan, saya telah mempelajari dasar-dasar pemrograman serta mengerjakan beberapa proyek sederhana, seperti website berita dan sistem login. Saya selalu berusaha mengembangkan kemampuan, menerima tantangan baru, dan terus belajar agar menjadi seorang pengembang web yang kompeten.
+        <div class="row justify-content-center text-center">
+          <div class="col-md-8">
+            <p class="fs-5 text-secondary lh-lg">
+              Saya seorang lulusan<strong> Teknologi Rekayasa Perangkat Lunak (TRPL)</strong> yang memiliki minat besar dalam dunia pengembangan web. Selama masa studi, saya telah mempelajari dasar‑dasar HTML, CSS, dan Java untuk membangun
+              struktur serta logika aplikasi berbasis web. Saya juga mendalami Python sebagai bahasa pemrograman serbaguna yang membantu memahami konsep algoritma dan pengolahan data. Selain itu, saya menggunakan Figma untuk merancang
+              antarmuka pengguna yang menarik dan responsif, memastikan setiap desain memiliki keseimbangan antara estetika dan fungsionalitas. Saya percaya bahwa teknologi yang baik tidak hanya berfungsi dengan efisien, tetapi juga mampu
+              memberikan pengalaman visual dan interaksi yang menyenangkan bagi penggunanya. Dengan kombinasi kemampuan teknis dan kreativitas desain, saya bersemangat untuk terus mengembangkan diri di bidang web development dan menciptakan
+              solusi digital yang bermanfaat.
+            </p>
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#87ceeb" fill-opacity="1" d="M0,192L48,176C96,160,192,128,288,128C384,128,480,160,576,186.7C672,213,768,235,864,202.7C960,171,1056,85,1152,74.7C1248,64,1344,128,1392,160L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#f8f9fa"
+          fill-opacity="1"
+          d="M0,192L48,176C96,160,192,128,288,128C384,128,480,160,576,186.7C672,213,768,235,864,202.7C960,171,1056,85,1152,74.7C1248,64,1344,128,1392,160L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
     </section>
+    <!-- akhir Tentang Saya -->
 
-    <!-- akhir About -->
- 
-    <!-- Projects -->
-
- <section id="projects">
-<div class="container">
-  <div class="row text-center">
-    <div class="col">
-      <h2>My Projects</h2>
-    </div>
-    </div>
-    <div class="row">
-      <div class="col-12 col-md-4">
-        <div class="card tekst-center mt-3">
-  <img src="img/login-From.png" class="card-img-top" alt="login-From" />
-  <div class="card-body">
-    <p class="card-text">Saya membuat sebuah formulir login sederhana menggunakan HTML dan CSS.</p>
-  </div>
-</div>
-        <div class="card tekst-center mt-3">
-  <img src="img/login-from-gambar.png" class="card-img-top" alt="login-From-gambar" />
-  <div class="card-body">
-    <p class="card-text">Saya membuat sebuah formulir login ditambah gambar sederhana menggunakan HTML dan CSS.</p>
-  </div>
-</div>
-        <div class="card tekst-center mt-3">
-  <img src="img/web-berita.png" class="card-img-top" alt="web-berita" />
-  <div class="card-body">
-    <p class="card-text">Saya membuat sebuah website berita sederhana menggunakan HTML dan CSS.</p>
-  </div>
-</div>
+    <!-- Keahlian -->
+    <section id="keahlian" class="pt-5 pb-3 bg-light">
+      <div class="container">
+        <div class="row text-center mb-5">
+          <div class="col">
+            <h2 class="fw-bold">Keahlian <span class="text-primary-custom">Saya</span></h2>
+            <div class="mx-auto rounded section-divider"></div>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-3 mb-4">
+            <div class="p-4 bg-white rounded shadow-sm h-100 border-0">
+              <i class="fa-brands fa-python fa-2x"></i>
+              <h5 class="fw-bold mt-3">Python</h5>
+              <p class="text-secondary mb-0">Bahasa pemrograman serbaguna untuk pengembangan web, data science, dan otomatisasi.</p>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="p-4 bg-white rounded shadow-sm h-100 border-0">
+              <i class="fa-brands fa-java fa-2x"></i>
+              <h5 class="fw-bold mt-3">Java</h5>
+              <p class="text-secondary mb-0">Platform kuat untuk membangun sistem backend, aplikasi enterprise, dan pengelolaan algoritma kompleks..</p>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="p-4 bg-white rounded shadow-sm h-100 border-0">
+              <i class="fa-solid fa-brush fa-2x"></i>
+              <h5 class="fw-bold mt-3">Html</h5>
+              <p class="text-secondary mb-0">Bahasa markup dasar untuk membangun struktur halaman web dan mengatur tata letak konten.</p>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="p-4 bg-white rounded shadow-sm h-100 border-0">
+              <i class="fa-brands fa-figma fa-2x"></i>
+              <h5 class="fw-bold mt-3">Figma</h5>
+              <p class="text-secondary mb-0">Alat desain antarmuka kolaboratif untuk membuat prototipe dan rancangan UI/UX interaktif.</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-</div>
- </section>
+    </section>
+    <!-- akhir Keahlian -->
 
-    <!-- Akhir Projects -->
+    <!-- Proyek -->
+    <section id="proyek" class="pt-5 pb-5 bg-white">
+      <div class="container">
+        <div class="row text-center justify-content-center mb-5">
+          <div class="col">
+            <h2 class="fw-bold">Karya & <span class="text-primary-custom">Proyek</span></h2>
+            <div class="mx-auto rounded section-divider"></div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <!-- Project 1 -->
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+              <img src="img/login-From.png" class="card-img-top p-3 project-img" alt="Login-Form" />
+              <div class="card-body p-4 text-center">
+                <span class="badge text-white mb-2 bg-primary-custom">HTML</span>
+                <span class="badge bg-secondary mb-2">CSS</span>
+                <h5 class="card-title fw-bold mt-2">Form Login Sederhana</h5>
+                <p class="card-text text-secondary">Saya membuat sebuah form login sederhana menggunakan struktur dasar HTML dan styling CSS.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+              <img src="img/login-from-gambar.png" class="card-img-top p-3 project-img" alt="Login-Form-Gambar" />
+              <div class="card-body p-4 text-center">
+                <span class="badge text-white mb-2 bg-primary-custom">HTML</span>
+                <span class="badge bg-secondary mb-2">CSS</span>
+                <h5 class="card-title fw-bold mt-2">Form Login dengan Ilustrasi</h5>
+                <p class="card-text text-secondary">Pengembangan form login dengan tambahan elemen visual/gambar sederhana untuk mempercantik antarmuka.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+              <img src="img/web-berita.png" class="card-img-top p-3 project-img" alt="Web-Berita" />
+              <div class="card-body p-4 text-center">
+                <span class="badge text-white mb-2 bg-primary-custom">Html-Css</span>
+                <span class="badge bg-secondary mb-2">Web Design</span>
+                <h5 class="card-title fw-bold mt-2">Website Berita Sederhana</h5>
+                <p class="card-text text-secondary">Eksplorasi tata letak elemen web untuk merancang struktur halaman portal berita menggunakan HTML dan CSS.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="col-md-4 mb-2">
+            <div class="card h-100 shadow-sm border-0">
+              <img src="img/figma.jpeg" class="card-img-top p-3 project-img" alt="Mockup" />
+              <div class="card-body p-4 text-center">
+                <span class="badge text-white mb-2 bg-primary-custom">Figma</span>
+                <span class="badge bg-secondary mb-2">Mockup </span>
+                <h5 class="card-title fw-bold mt-2">Mockup Web Hexakost</h5>
+                <p class="card-text text-secondary">Eksplorasi tata letak elemen web untuk merancang struktur halaman tampilan web Hexakost menggunakan aplikasi Figma.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Project 5 -->
+          <div class="col-md-4 mb-2">
+            <div class="card h-100 shadow-sm border-0">
+              <img src="img/web-profile-saya.png" class="card-img-top p-3 project-img" alt="Web Profile saya" />
+              <div class="card-body p-4 text-center">
+                <span class="badge text-white mb-2 bg-primary-custom">Html</span>
+                <span class="badge bg-secondary mb-2">Web Profile Saya </span>
+                <h5 class="card-title fw-bold mt-2">Web Profile Saya</h5>
+                <p class="card-text text-secondary">Eksplorasi tata letak elemen web untuk merancang struktur halaman Portal Profile saya pertama kali mengunakan HTML dan CSS.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+    </section>
+    <!-- Akhir Proyek -->
+
+    <!-- Kontak -->
+    <section id="kontak" class="pb-5 bg-light">
+      <div class="container">
+        <div class="row text-center mb-5">
+          <div class="col">
+            <h2 class="fw-bold">Hubungi <span class="text-primary-custom">Saya</span></h2>
+            <div class="mx-auto rounded section-divider"></div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <!-- Info Kontak -->
+          <div class="col-md-4 mb-4">
+            <div class="d-flex align-items-center mb-4">
+              <div class="text-white rounded-circle d-flex justify-content-center align-items-center me-3 shadow-sm contact-icon-wrapper">
+                <i class="bi bi-geo-alt-fill fs-5"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold mb-0">Lokasi</h6>
+                <span class="text-secondary">Batu Rejo, Indonesia</span>
+              </div>
+            </div>
+            <div class="d-flex align-items-center mb-4">
+              <div class="text-white rounded-circle d-flex justify-content-center align-items-center me-3 shadow-sm contact-icon-wrapper">
+                <i class="bi bi-github fs-5"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold mb-0"><a href="https://github.com/celinebarus" class="text-black text-decoration-none">GitHub</a></h6>
+              </div>
+            </div>
+            <div class="d-flex align-items-center">
+              <div class="text-white rounded-circle d-flex justify-content-center align-items-center me-3 shadow-sm contact-icon-wrapper">
+                <i class="bi bi-instagram fs-5"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold mb-0"><a href="https://www.instagram.com/celine_barus18?igsh=MXMwZDRsbXhzdzlyeQ==" class="text-black text-decoration-none">Instagram</a></h6>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form Kontak -->
+          <div class="col-md-6">
+            <div class="card p-4 shadow-sm border-0 bg-white">
+              <form>
+                <div class="mb-3">
+                  <label for="name" class="form-label fw-semibold text-secondary">Nama Lengkap</label>
+                  <input type="text" class="form-control border-1 py-2" id="name" placeholder="Masukkan nama Anda" />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label fw-semibold text-secondary">Alamat Email</label>
+                  <input type="email" class="form-control border-1 py-2" id="email" placeholder="nama@email.com" />
+                </div>
+                <div class="mb-4">
+                  <label for="message" class="form-label fw-semibold text-secondary">Pesan</label>
+                  <textarea class="form-control border-1 py-2" id="message" rows="4" placeholder="Tuliskan pesan Anda..."></textarea>
+                </div>
+                <button type="submit" class="btn text-white w-100 py-2 fw-bold rounded-pill bg-primary-custom">Kirim Pesan</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Kontak -->
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+      <div class="container">
+        <div class="mb-3">
+          <a href="#" class="text-white text-decoration-none me-3 fs-5"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-white text-decoration-none me-3 fs-5"><i class="bi bi-github"></i></a>
+        </div>
+        <p class="mb-0 text-secondary">&copy; 2026 Celine Ernesta Marsella Br Barus. Dibuat dengan <i class="bi bi-heart-fill text-danger"></i></p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
