@@ -9,10 +9,8 @@ body {
     );
     background-attachment: fixed;
     min-height: 100vh;
-  background-color:linear-gradient( #f8f9fa, #3b95ef);
 }
-
-.p{
+.text-justify {
   text-align: justify;
   
 }
@@ -120,6 +118,7 @@ body {
 .card p {
   font-size: 15px;
   line-height: 1.6;
+  text-align: justify;
 }
 
 
@@ -128,13 +127,34 @@ body {
   height: 220px;
   object-fit: contain;
   background-color: #f8f9fa;
+  
 }
 
 /* Kontak */
 .contact-icon-wrapper {
   width: 50px;
   height: 50px;
-  background-color: var(--primary-color);
-  box-shadow: transform 0.3s ease 4px 8px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(to right, #C8F4F0, #6DD5C0);
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+footer {
+  background: linear-gradient(90deg, #5bc0de, #a8e6cf);
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+footer a {
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #ff4d4d;
 }
 
